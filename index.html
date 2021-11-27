@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="favicons/favicon.ico">
+        <title>COVID-19 Tracker</title>
+        <meta name="description" content="A Simple COVID-19 Tracker for India.It gives the information about total active cases , deaths, recovered cases etc.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+      </head>
+    <body>
+
+      <div class="container-fluid">
+
+            <header class="header">
+              <h1 class="header-heading display-4">COVID-19 TRACKER </h1>
+              <p class=" header-paragraph lead"> This COVID-19 Tracker will help you know how many Total Cases are currently there in the country and rest of the information. </p>
+            </header>
+        </div>
+
+        <div class="container-fluid head">
+            <div class="row">
+
+                <!-- CONFIRMED CASES CARD -->
+                <div class="col-lg-3 d-flex justify-content-center inner">
+                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-heading card-header text-center">CONFIRMED</div>
+                        <div class="card-body">
+                          <p class="confirmed card-text text-center">&nbsp;</p>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- ACTIVE CASES -->
+
+                <div class="col-lg-3 d-flex justify-content-center inner">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-heading card-header text-center">ACTIVE</div>
+                        <div class="card-body">
+                          <p class="active card-text text-center">&nbsp;</p>
+                        </div>
+                      </div>
+                </div>
+
+
+                <!-- RECOVERED CASES CARD -->
+
+                <div class="col-lg-3 d-flex justify-content-center inner">
+                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                        <div class="card-heading card-header text-center">RECOVERED </div>
+                        <div class="card-body">
+                          <p class="recovered card-text text-center">&nbsp;</p>
+                        </div>
+
+                </div>
+            </div>
+
+
+
+                <!-- DEATHS CARD -->
+                <div class="col-lg-3 d-flex justify-content-center inner">
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-heading card-header text-center">DEATHS</div>
+                    <div class="card-body">
+                      <p class="deaths card-text text-center">&nbsp;</p>
+                    </div>
+                  </div>
+                  </div>
+
+
+    </div>
+        </div>
+
+
+        <div class="chart-container container-fluid ">
+          <div class="cont">
+          <h2 class="text-center"> Data Visualized </h2>
+        </div>
+          <canvas id="confirmedChart" width="400" height="400"></canvas>
+
+        </div>
+
+
+        <div class="table-container container-fluid">
+          <h2 class="text-center text"> State-Wise Details </h2>
+
+            <table class="table ">
+              <thead >
+                <tr>
+                  <th scope="col">Region</th>
+                  <th scope="col">Confirmed Cases</th>
+                  <th scope="col">Active Cases</th>
+                  <th scope="col">Recovered</th>
+                  <th scope="col">Deaths</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+        </div>
+
+
+        <div class="foot">
+          <footer>
+            &copy; Shreya Kalluraya | 2021
+          </footer>
+        </div>
+
+
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+         <script src="app.js"></script>
+    </body>
+</html>
